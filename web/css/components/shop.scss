@@ -1,0 +1,150 @@
+.shop__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    position: relative;
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    @include tablets {
+        max-width: 595px;
+       
+    }
+
+    @include phones {
+        max-width: 483px;
+    }
+
+    
+}
+
+
+
+
+
+.arrow {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    @include tablets {
+        top: 40%;
+    }
+
+
+
+}
+
+.arrow__button {
+    background: transparent;
+    border: none;
+}
+
+.shop__content {
+
+    @include tablets {
+        text-align: center; 
+        
+      
+    }
+}
+
+
+.shop__item {
+    display: flex;
+
+
+    @include tablets {
+    
+        flex-direction: column;
+        
+        
+
+    }
+}
+
+.shop__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+
+  
+}
+
+
+.shop__info {
+    margin-bottom: rem(20px);
+}
+
+.shop__features {
+    display: flex;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        justify-content: center;
+    }
+    
+}
+
+
+.shop__feature {
+    display: flex;
+    width: rem(324px);
+
+    @include tablets {
+        justify-content: center;
+        width: 100%;
+    }
+   
+}
+
+.shop__features-block {
+    margin-right: rem(75px);
+
+    
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.shop__features-block-below {
+    display: flex;
+    font-weight: 700;
+
+    
+    
+
+}
+
+.shop__features-amount {
+    margin-right: rem(5px);
+}
+
+.shop__price {
+    display: flex;
+    margin-right: rem(25px);
+    font-size: rem(41px);
+
+
+}
+
+
+.shop__title {
+    font-weight: 700;
+    font-size: rem(36px);
+    // width: rem(419px);
+
+    
+
+}

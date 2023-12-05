@@ -1,0 +1,132 @@
+.team {
+   display: flex;
+
+  
+   @include tablets{
+    padding: 0 10%;
+   }
+   
+}
+
+
+.team__title {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    text-transform: none;
+    font-weight: 700;
+    margin-bottom: rem(20px);
+
+
+    &::after {
+        content: "";
+        width: 9px;
+        height: 9px;
+        display: inline-block;
+        background: url("../../img/Polygon\ 1.png") center no-repeat;
+        
+
+        
+    }
+
+
+}
+
+.team__item.active .team__title::after{
+    
+    transform: rotate(180deg);
+    
+}
+
+
+
+
+
+
+
+.team-version-desktop {
+    @include tablets{
+        display: none;
+    }
+}
+
+.team-version-mobile .team__item {
+    margin-bottom: rem(10px);
+}
+
+.team-version-mobile {
+    display: none;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+}
+
+.team__item {
+    text-align: center;
+    position: relative;
+    flex: 1;
+
+    
+    
+    
+}
+
+
+
+
+
+.team__member {
+    height: rem(290px);
+    margin-left: rem(25px);
+    margin-bottom: rem(25px);
+
+    @include tablets {
+      
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+.team-version-desktop .team__content {
+    position: absolute;
+    top: 100%;
+}
+
+.team__content {
+    
+    overflow: hidden;
+    transition: height .3s;
+    height: 0;
+
+    
+}
+
+
+
+
+
+.team__content-block{
+    padding-bottom: rem(5px);
+}
+
+
+.team__content-title {
+    font-weight: 700;
+    margin-top: rem(10px);
+}
+
+
+
+
+
+
+

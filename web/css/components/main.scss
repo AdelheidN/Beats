@@ -1,0 +1,64 @@
+
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+
+//breakpoints
+
+
+
+$tablets: 768px;
+$phones: 480px;
+
+
+// colors
+$pink: #E01F3D;
+$gray: #303236;
+
+@import "media.scss";
+
+
+//z-index
+$z-scroll-menu: 100;
+
+
+
+
+//normalize
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+//setups
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import "layout";
+
+
+        
+
+
+//components
+
+@import "hero.scss";
+@import "header.scss";
+@import "features.scss";
+@import "feature.scss";
+@import "button.scss";
+@import "section.scss";
+@import "benefits.scss";
+@import "benefit.scss";
+@import "headline.scss";
+@import "reviews.scss";
+@import "interactive-avatar.scss";
+@import "form.scss";
+@import "radio.scss";
+@import "scroll-menu.scss";
+@import "map.scss";
+@import "footer.scss";
+@import "shop.scss";
+@import "dropdown-menu.scss";
+@import "team.scss";
+@import "burger.scss";
+@import "burger__menu.scss";
+@import "modal.scss";
+@import "_player.scss";
+@import "products.scss";

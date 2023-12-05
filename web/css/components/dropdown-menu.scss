@@ -1,0 +1,43 @@
+.shop__drop-btn {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 4px ;
+    width: rem(273px);
+    padding: rem(15px);
+    background-color: #F8FAF9;
+    z-index: 1;
+    
+    
+    
+} 
+
+
+.dropdown__item {
+    display: flex;
+    color: black;
+    font-weight: 400;
+    
+
+}
+
+.dropdown__setting {
+    margin-left: rem(30px);
+    margin-bottom: rem(20px);
+    
+    
+}
+
+.dropdown__char {
+    margin-left: auto;
+}

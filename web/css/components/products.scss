@@ -1,0 +1,102 @@
+.products__section {
+    background: url(../../img/fitness.jpg) right center/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.products-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 2;
+}
+
+
+
+.products-menu__content {
+    background: rgba(47, 50, 52, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.93;
+    transition: width .7s;
+
+}
+
+.products-menu__container {
+    padding: 40px 73px 45px 26px;
+}
+
+.products-menu__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: transparent;
+}
+
+.products-menu__item {
+    display: flex;
+    height: 100vh;
+
+}
+
+.products-menu__desc {
+    width: rem(540px);
+    color: #fff;
+    opacity: 0.93;
+    line-height: 1.5;
+    font-size: rem(16px);
+    padding: rem(50px) rem(86px) rem(50px) rem(27px);
+
+    @include tablets {
+        max-width: rem(471px);
+        width: 100%;
+    }
+    @include phones {
+        width: 100%;
+        padding: rem(50px) rem(30px) rem(50px) rem(27px);
+    }
+
+}
+
+.products-menu__btn {
+    display: block;
+    width: rem(100px);
+    position: relative;
+    
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000000;
+        opacity: 0.6;
+        z-index: 3;
+    }
+}
+
+
+.products-menu__title {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    font-weight: 400;
+    font-size: rem(47.94px);
+    color: #fff;
+    transform-origin: 0 0;
+    white-space: nowrap;
+    margin-top: rem(-46px);
+    z-index: 4;
+
+    @include phones {
+        font-size: rem(38px);
+      }
+
+}

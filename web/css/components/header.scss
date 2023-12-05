@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(10px);
+}
+
+.contacts__tel .header__contacts {
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu {
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item{
+    margin-right: rem(15px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.menu__link {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-right: rem(10px);
+}
+
+.contacts__tel-icon {
+    height: rem(14px);
+    width: rem(14px);
+    margin-right: rem(6px);
+    align-items: center;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.contacts__tel {
+    text-decoration: none;
+
+    @include tablets {
+        display: none;
+    }
+}

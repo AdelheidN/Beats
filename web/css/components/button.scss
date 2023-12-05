@@ -1,0 +1,41 @@
+.button {
+    background-color: #E01F3D;
+    color: #FFF;
+    font-size: rem(16px);
+    font-weight: 700;
+    border-radius: rem(35px);
+    text-transform: uppercase;
+    padding: rem(19px) rem(35px);
+    text-decoration: none;
+    line-height: 1;
+    border: none;
+    margin-bottom: rem(20px);
+    margin-right: rem(10px);
+
+    &--button-theme-none {
+        background: transparent;
+        color: #000;
+
+    }
+}
+
+
+
+.shop__button {
+    background-color: #9A9A9A;
+    height: rem(91px);
+    width: rem(91px);
+    border-radius: rem(4px);
+    background: url("../../img/click.png") center no-repeat;
+    position: relative;
+
+    @include tablets {
+        display: none;
+    }
+
+    
+}
+
+.shop__button:hover ~ .dropdown__menu {
+    display: block;
+}
